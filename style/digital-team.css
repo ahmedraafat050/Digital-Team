@@ -1,0 +1,33 @@
+:root {
+  --main-color: #00c6d7;
+  --dark-color:#4B4B4B
+}
+
+.navbar .navbar-brand {
+  color: var(--main-color);
+}
+
+.navbar .navbar-nav li a{
+  color: #fff;
+  transition: all ease 0.3s;
+}
+
+.active,
+.navbar .navbar-nav li a:hover {
+  background-color: var(--main-color);
+}
+
+.landing {
+  background-image: url(../images/home-bg-slideshow1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.landing .content {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translatey(-50%) translatex(-50%);
+}

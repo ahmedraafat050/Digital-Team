@@ -1,6 +1,12 @@
 :root {
   --main-color: #00c6d7;
-  --dark-color:#4B4B4B
+  --dark-color:#4B4B4B;
+}
+
+.navbar {
+  z-index: 5245222;
+  background-color: transparent;
+  transition: all ease 0.3s;
 }
 
 .navbar .navbar-brand {
@@ -13,8 +19,10 @@
 }
 
 .active,
-.navbar .navbar-nav li a:hover {
+.navbar .navbar-nav li a:hover,
+.links a:hover {
   background-color: var(--main-color);
+  color: #fff !important;
 }
 
 .landing {
@@ -30,4 +38,35 @@
   top:50%;
   left: 50%;
   transform: translatey(-50%) translatex(-50%);
+}
+
+.title .number{
+  color: var(--main-color);
+  font-size: 62px;
+  font-weight: bolder;
+}
+
+.title {
+  width: fit-content;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.services .card svg {
+  color: var(--main-color);
+}
+
+.agence {
+  background-color: var(--dark-color);
+}
+
+.agence .title {
+  width: fit-content;
+  border-bottom: 1px solid white;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.3s;
+  margin-right: 3px;
 }
